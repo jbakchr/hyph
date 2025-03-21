@@ -2,6 +2,9 @@
   "name": "hyph",
   "version": "1.0.0",
   "main": "index.js",
+  "bin": {
+    "hyph": "index.js"
+  },
   "keywords": [],
   "author": "Jonas Bak Phillipson",
   "license": "ISC",

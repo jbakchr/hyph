@@ -8,7 +8,7 @@
   "keywords": [],
   "author": "Jonas Bak Phillipson",
   "license": "ISC",
-  "description": "A cli that hyphenates multiple strings with spaces and creates a directory from them",
+  "description": "A global CLI to create hyphenated directory names from multiple strings with spaces",
   "dependencies": {
     "commander": "^13.1.0"
   }

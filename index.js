@@ -4,8 +4,10 @@ const fs = require("node:fs");
 const path = require("node:path");
 const { program } = require("commander");
 
-program.argument("<string...>", "String to create dir for").action((str) => {
-  const dirname = path.join(process.cwd(), str.join("-"));
+program.argument("<string...>", "String to create dir for").action((strArr) => {
+  const cleanedArr = strArr.filter((item) => item !== "-");
+
+  const dirname = path.join(process.cwd(), cleanedArr.join("-").toLowerCase());
 
   if (fs.existsSync(dirname)) {
     console.log("Folder already exists");
